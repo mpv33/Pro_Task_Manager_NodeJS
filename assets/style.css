@@ -1,0 +1,259 @@
+/* setting the body background color */
+body{
+    background-color:gray;
+
+
+}
+/* main div containg allo elements */
+#container{
+    margin: auto;
+    width: 50vw;
+    /* border: solid; */
+    box-shadow: 0 0 10px 10px black ;
+    background-color: white;
+    overflow: hidden;
+    margin-bottom: 50px;
+
+}
+
+/* heading styling */
+h1{
+    padding-top: 50px;
+    /* border-bottom: solid black; */
+    text-align: center;
+    text-shadow: 0 10px 10px dimgray ;
+    font-size: xx-large;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: underline;
+    color: crimson;
+
+
+}
+/* .input class for all input fields */
+.input{
+    /* width: 40%; */
+    height: 50px;
+    width: 30%;
+    border: none;
+    /* background-color:lightgray; */
+    outline: none;
+    margin: 0;
+    padding: 10px;
+    font-family: sans-serif;
+    font-size: larger;
+    font-size: bold;
+    font-weight: bold;
+    background-color: transparent;
+
+}
+/* checkbox sizing */
+#status{
+    transform: scale(1.5);
+    border: none;
+    outline: none;
+    box-shadow: none;
+    background-color: lightgray;
+
+}
+/* .duedate class for date input field */
+.duedate{
+   border-right: solid;
+   border-left: solid;
+}
+
+/* form  id for div inside  form */
+#form{
+
+    background-color: lightgray;
+}
+.task{
+    background-color: lightgray;
+}
+/* these are labels for every input field setting their border solid  */
+.labels{
+    border-top: solid;
+    border-bottom: solid;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+    /* border-bottom:1px solid ; */
+    font-family: sans-serif;
+    padding: 10px;
+
+
+}
+/* .button class for delete and add button  */
+.button{
+
+    width: 100%;
+    background-color: white;
+
+
+    padding: 10px;
+    height: auto;
+
+    font-size: x-large;
+    border: none;
+    outline: none;
+    margin: 1px;
+}
+/* onhover changing cursor to pointer */
+.button:hover{
+    cursor: pointer;
+
+    color: white;
+
+}
+
+.add{
+    /* color: dodgerblue; */
+
+    background-color: white;
+    color: green;
+    border-top: solid green;
+    border-bottom: solid green;
+    font-weight: bold;
+
+
+
+
+
+}
+/* onhover changing cursor to pointer */
+
+.add:hover{
+    background-color: green;
+    /* border-radius: 20px; */
+    color: white;
+}
+/* .delete class for delete button */
+.delete{
+    /* color: red; */
+    background-color: white;
+    color: red;
+    border-top: solid red;
+    border-bottom: solid red;
+    font-weight: bold;
+
+
+
+
+}
+/* onhover changing cursor to pointer */
+
+.delete:hover{
+
+
+    background-color: red;
+    /* border-radius: 20px; */
+    color: white;
+    font-weight: bold;
+
+}
+
+/* drop down menu styling setting font size larger */
+.select{
+
+    /* height: 40px; */
+    height: 70px;
+    padding: 10px;
+    font-family: sans-serif;
+    font-size: bold;
+    font-weight: bold;
+}
+/* while checked put a line through its lower sibling div */
+input:checked ~#task{
+    text-decoration: line-through;
+    filter: blur(2px);
+
+
+}
+/* alternate liost items with dogerblue color */
+li:nth-child(2n+1){
+    background-color: dodgerblue;
+    color: white;
+
+}
+
+/* alternate liost items with lightblue color */
+
+li{
+    background-color:lightblue;
+
+    color: black;
+
+
+}
+/* list css settings removing disk styling  */
+ul{
+    padding-inline-start: 0;
+    list-style: none;
+    margin-bottom: 0;
+    margin-top: 0;
+    font-family: sans-serif;
+}
+
+li {
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    font-size: large;
+    font-weight: bold;
+    justify-content: space-between;
+    text-align: left;
+    /* flex-grow: 1; */
+    margin: 1px;
+    /* border-radius:50px ; */
+
+
+
+
+}
+/* the task counter how many are pending its postion is fixed at botttom */
+#counter{
+    width: 100%;
+    background-color: green;
+    font-size: x-large;
+    padding: 10px;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    font-weight: bold;
+    /* border-radius:20px ; */
+}
+/* this is category div putting backgroud color black */
+#category{
+    background-color: black;
+    color: white;
+    padding:10px;
+    width: 80px;
+    height:20px;
+    /* border-radius:20px ; */
+}
+
+#list_columns{
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    font-size: large;
+    font-weight: bold;
+    justify-content: space-between;
+    background-color: dodgerblue;
+    padding-right: 50px;
+    /* border-radius: 20px; */
+
+
+}
+/* task discription styling */
+#task{
+  width: 25%;
+  overflow: hidden;
+  background-color: transparent;
+  /* word-break: break-all; */
+}
